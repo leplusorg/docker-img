@@ -31,5 +31,5 @@ $ docker run --rm -it --net=none -v "${PWD}:/tmp" thomasleplus/img identify /tmp
 To know more command line options of one of the imagemagick command:
 
 ```
-$ docker run --rm -it --net=none thomasleplus/img identify -h
+$ docker run --rm -it --net=none thomasleplus/img identify -help
 ```
