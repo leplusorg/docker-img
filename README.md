@@ -7,6 +7,7 @@ Docker container to manipulate images (imagemagick, exiftool...).
 ![Docker Pulls](https://img.shields.io/docker/pulls/thomasleplus/img)
 ![Docker Automated](https://img.shields.io/docker/cloud/automated/thomasleplus/img)
 ![Docker Build](https://img.shields.io/docker/cloud/build/thomasleplus/img)
+![Docker Version](https://img.shields.io/docker/v/thomasleplus/img?sort=semver)
 
 ## Example without using the filesystem
 
