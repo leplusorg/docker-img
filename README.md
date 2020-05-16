@@ -2,6 +2,11 @@
 
 Docker container to manipulate images (imagemagick, exiftool...).
 
+![Docker Stars](https://img.shields.io/docker/stars/thomasleplus/img.svg)
+![Docker Pulls](https://img.shields.io/docker/pulls/thomasleplus/img.svg)
+![Docker Automated](https://img.shields.io/docker/automated/thomasleplus/img.svg)
+![Docker Build](https://img.shields.io/docker/build/thomasleplus/img.svg)
+
 ## Example without using the filesystem
 
 Let's say that you have an image `foo.jpg` in your current working directory that you want to extract its metadata:
