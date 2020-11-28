@@ -2,7 +2,7 @@
 
 Docker container to manipulate images (imagemagick, exiftool...).
 
-![GitHub Build](https://img.shields.io/github/workflow/status/thomasleplus/docker-img/Docker%20Image%20CI)
+![Docker Build](https://github.com/thomasleplus/docker-img/workflows/Docker/badge.svg)
 ![Docker Stars](https://img.shields.io/docker/stars/thomasleplus/img)
 ![Docker Pulls](https://img.shields.io/docker/pulls/thomasleplus/img)
 ![Docker Automated](https://img.shields.io/docker/cloud/automated/thomasleplus/img)
