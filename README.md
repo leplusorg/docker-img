@@ -2,12 +2,12 @@
 
 Docker container to manipulate images (imagemagick, exiftool...).
 
-![Docker Build](https://github.com/thomasleplus/docker-img/workflows/Docker/badge.svg)
-![Docker Stars](https://img.shields.io/docker/stars/thomasleplus/img)
-![Docker Pulls](https://img.shields.io/docker/pulls/thomasleplus/img)
-![Docker Automated](https://img.shields.io/docker/cloud/automated/thomasleplus/img)
-![Docker Build](https://img.shields.io/docker/cloud/build/thomasleplus/img)
-![Docker Version](https://img.shields.io/docker/v/thomasleplus/img?sort=semver)
+[![Docker Build](https://github.com/thomasleplus/docker-img/workflows/Docker/badge.svg)](https://github.com/thomasleplus/docker-img/actions?query=workflow:"Docker")
+[![Docker Stars](https://img.shields.io/docker/stars/thomasleplus/img)](https://hub.docker.com/r/thomasleplus/img)
+[![Docker Pulls](https://img.shields.io/docker/pulls/thomasleplus/img)](https://hub.docker.com/r/thomasleplus/img)
+[![Docker Automated](https://img.shields.io/docker/cloud/automated/thomasleplus/img)](https://hub.docker.com/r/thomasleplus/img)
+[![Docker Build](https://img.shields.io/docker/cloud/build/thomasleplus/img)](https://hub.docker.com/r/thomasleplus/img)
+[![Docker Version](https://img.shields.io/docker/v/thomasleplus/img?sort=semver)](https://hub.docker.com/r/thomasleplus/img)
 
 ## Example without using the filesystem
 
