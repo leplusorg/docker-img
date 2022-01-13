@@ -2,12 +2,12 @@
 
 Docker container to manipulate images (imagemagick, exiftool...).
 
-[![Docker Build](https://github.com/thomasleplus/docker-img/workflows/Docker/badge.svg)](https://github.com/thomasleplus/docker-img/actions?query=workflow:"Docker")
-[![Docker Stars](https://img.shields.io/docker/stars/thomasleplus/img)](https://hub.docker.com/r/thomasleplus/img)
-[![Docker Pulls](https://img.shields.io/docker/pulls/thomasleplus/img)](https://hub.docker.com/r/thomasleplus/img)
-[![Docker Automated](https://img.shields.io/docker/cloud/automated/thomasleplus/img)](https://hub.docker.com/r/thomasleplus/img)
-[![Docker Build](https://img.shields.io/docker/cloud/build/thomasleplus/img)](https://hub.docker.com/r/thomasleplus/img)
-[![Docker Version](https://img.shields.io/docker/v/thomasleplus/img?sort=semver)](https://hub.docker.com/r/thomasleplus/img)
+[![Docker Build](https://github.com/leplusorg/docker-img/workflows/Docker/badge.svg)](https://github.com/leplusorg/docker-img/actions?query=workflow:"Docker")
+[![Docker Stars](https://img.shields.io/docker/stars/leplusorg/img)](https://hub.docker.com/r/leplusorg/img)
+[![Docker Pulls](https://img.shields.io/docker/pulls/leplusorg/img)](https://hub.docker.com/r/leplusorg/img)
+[![Docker Automated](https://img.shields.io/docker/cloud/automated/leplusorg/img)](https://hub.docker.com/r/leplusorg/img)
+[![Docker Build](https://img.shields.io/docker/cloud/build/leplusorg/img)](https://hub.docker.com/r/leplusorg/img)
+[![Docker Version](https://img.shields.io/docker/v/leplusorg/img?sort=semver)](https://hub.docker.com/r/leplusorg/img)
 
 ## Example without using the filesystem
 
@@ -16,13 +16,13 @@ Let's say that you have an image `foo.jpg` in your current working directory tha
 ### Mac/Linux
 
 ```
-cat foo.jpg | docker run --rm -i --net=none thomasleplus/img identify -
+cat foo.jpg | docker run --rm -i --net=none leplusorg/img identify -
 ```
 
 ### Windows
 
 ```
-type foo.jpg | docker run --rm -i --net=none thomasleplus/img identify -
+type foo.jpg | docker run --rm -i --net=none leplusorg/img identify -
 ```
 
 ## Example using the filesystem
@@ -32,7 +32,7 @@ Same thing, assuming that you have an image `foo.jpg` in your current working di
 ### Mac/Linux
 
 ```
-docker run --rm -t --user="$(id -u):$(id -g)" --net=none -v "$(pwd):/tmp" thomasleplus/img identify /tmp/foo.jpg
+docker run --rm -t --user="$(id -u):$(id -g)" --net=none -v "$(pwd):/tmp" leplusorg/img identify /tmp/foo.jpg
 ```
 
 ### Windows
@@ -40,13 +40,13 @@ docker run --rm -t --user="$(id -u):$(id -g)" --net=none -v "$(pwd):/tmp" thomas
 In `cmd`:
 
 ```
-docker run --rm -t --net=none -v "%cd%:/tmp" thomasleplus/img identify /tmp/foo.jpg
+docker run --rm -t --net=none -v "%cd%:/tmp" leplusorg/img identify /tmp/foo.jpg
 ```
 
 In PowerShell:
 
 ```
-docker run --rm -t --net=none -v "${PWD}:/tmp" thomasleplus/img identify /tmp/foo.jpg
+docker run --rm -t --net=none -v "${PWD}:/tmp" leplusorg/img identify /tmp/foo.jpg
 ```
 
 ## Help
@@ -54,9 +54,9 @@ docker run --rm -t --net=none -v "${PWD}:/tmp" thomasleplus/img identify /tmp/fo
 To know more command line options of one of the imagemagick command:
 
 ```
-docker run --rm --net=none thomasleplus/img identify -help
+docker run --rm --net=none leplusorg/img identify -help
 ```
 
 ## Request new tool
 
-Please use [this link](https://github.com/thomasleplus/docker-img/issues/new?assignees=thomasleplus&labels=enhancement&template=feature_request.md&title=%5BFEAT%5D) (GitHub account required) to request that a new tool be added to the image. I am always interested in adding new capabilities to these images.
+Please use [this link](https://github.com/leplusorg/docker-img/issues/new?assignees=leplusorg&labels=enhancement&template=feature_request.md&title=%5BFEAT%5D) (GitHub account required) to request that a new tool be added to the image. I am always interested in adding new capabilities to these images.
