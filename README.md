@@ -13,15 +13,15 @@ Docker container to manipulate images (imagemagick, exiftool...).
 
 Let's say that you have an image `foo.jpg` in your current working directory that you want to extract its metadata:
 
-### Mac/Linux
+**Mac/Linux**
 
-```
+```bash
 cat foo.jpg | docker run --rm -i --net=none leplusorg/img identify -
 ```
 
-### Windows
+**Windows**
 
-```
+```batch
 type foo.jpg | docker run --rm -i --net=none leplusorg/img identify -
 ```
 
@@ -29,23 +29,23 @@ type foo.jpg | docker run --rm -i --net=none leplusorg/img identify -
 
 Same thing, assuming that you have an image `foo.jpg` in your current working directory that you want to extract its metadata:
 
-### Mac/Linux
+**Mac/Linux**
 
-```
+```bash
 docker run --rm -t --user="$(id -u):$(id -g)" --net=none -v "$(pwd):/tmp" leplusorg/img identify /tmp/foo.jpg
 ```
 
-### Windows
+**Windows**
 
 In `cmd`:
 
-```
+```batch
 docker run --rm -t --net=none -v "%cd%:/tmp" leplusorg/img identify /tmp/foo.jpg
 ```
 
 In PowerShell:
 
-```
+```pwsh
 docker run --rm -t --net=none -v "${PWD}:/tmp" leplusorg/img identify /tmp/foo.jpg
 ```
 
@@ -53,7 +53,7 @@ docker run --rm -t --net=none -v "${PWD}:/tmp" leplusorg/img identify /tmp/foo.j
 
 To know more command line options of one of the imagemagick command:
 
-```
+```bash
 docker run --rm --net=none leplusorg/img identify -help
 ```
 
