@@ -51,7 +51,7 @@ docker run --rm -t --net=none -v "${PWD}:/tmp" leplusorg/img identify /tmp/foo.j
 
 ## Help
 
-To know more command line options of one of the imagemagick command:
+To know more command-line options of one of the imagemagick command:
 
 ```bash
 docker run --rm --net=none leplusorg/img identify -help
