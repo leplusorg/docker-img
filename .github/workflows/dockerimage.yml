@@ -28,7 +28,7 @@ jobs:
           pull: true
           push: true
           sbom: true
-          tags: leplusorg/csv:latest
+          tags: leplusorg/img:latest
       - name: Test the Docker image
         working-directory: img
         run: docker compose -f docker-compose.test.yml run sut
