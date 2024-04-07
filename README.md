@@ -5,8 +5,6 @@ Docker container to manipulate images (imagemagick, exiftool...).
 [![Docker Build](https://github.com/leplusorg/docker-img/workflows/Docker/badge.svg)](https://github.com/leplusorg/docker-img/actions?query=workflow:"Docker")
 [![Docker Stars](https://img.shields.io/docker/stars/leplusorg/img)](https://hub.docker.com/r/leplusorg/img)
 [![Docker Pulls](https://img.shields.io/docker/pulls/leplusorg/img)](https://hub.docker.com/r/leplusorg/img)
-[![Docker Automated](https://img.shields.io/docker/cloud/automated/leplusorg/img)](https://hub.docker.com/r/leplusorg/img)
-[![Docker Build](https://img.shields.io/docker/cloud/build/leplusorg/img)](https://hub.docker.com/r/leplusorg/img)
 [![Docker Version](https://img.shields.io/docker/v/leplusorg/img?sort=semver)](https://hub.docker.com/r/leplusorg/img)
 
 ## Example without using the filesystem
