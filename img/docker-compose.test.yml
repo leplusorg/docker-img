@@ -6,4 +6,4 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    command: identify --version
+    command: "sh -c '[ $(id -u) -ne 0 ] && identify --version'"
