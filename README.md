@@ -83,7 +83,7 @@ You can use the following command to verify the latest image using its
 sigstore signature attestation:
 
 ```bash
-cosign verify leplusorg/img --certificate-identity-regexp 'https://github\.com/leplusorg/docker-av/\.github/workflows/.+' --certificate-oidc-issuer 'https://token.actions.githubusercontent.com'
+cosign verify leplusorg/img --certificate-identity-regexp 'https://github\.com/leplusorg/docker-img/\.github/workflows/.+' --certificate-oidc-issuer 'https://token.actions.githubusercontent.com'
 ```
 
 The output should look something like this:
