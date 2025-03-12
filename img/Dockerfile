@@ -9,10 +9,20 @@ ARG USER_HOME=/home/default
 ARG USER_ID=1000
 ARG USER_GECOS=Default
 
-SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
+SHELL ["/bin/ash", "-euo", "pipefail", "-c"]
 
-# hadolint ignore=DL3018
-RUN apk --update --no-cache add exiftool imagemagick optipng \
+# hadolint ignore=DL3019
+RUN apk -U upgrade \
+    && apk add \
+    exiftool=13.03-r0 \
+    imagemagick=7.1.1.41-r0 \
+    optipng=0.7.8-r0 \
+    py3-pip=24.3.1-r0 \
+    python3=3.12.9-r0 \
+    && if apk -u list | grep -q -e . ; then \
+      apk -u list ; \
+      exit 1 ; \
+    fi \
     && rm -rf /var/cache/apk/*
 
 RUN adduser \
