@@ -2,7 +2,7 @@
 
 Docker container to manipulate images (imagemagick, exiftool...).
 
-[![Dockerfile](https://img.shields.io/badge/GitHub-Dockerfile-blue)](https://github.com/leplusorg/docker-img/blob/main/img/Dockerfile)
+[![Dockerfile](img/Dockerfile)
 [![Docker Build](https://github.com/leplusorg/docker-img/workflows/Docker/badge.svg)](https://github.com/leplusorg/docker-img/actions?query=workflow:"Docker")
 [![Docker Stars](https://img.shields.io/docker/stars/leplusorg/img)](https://hub.docker.com/r/leplusorg/img)
 [![Docker Pulls](https://img.shields.io/docker/pulls/leplusorg/img)](https://hub.docker.com/r/leplusorg/img)
