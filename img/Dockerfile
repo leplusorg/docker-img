@@ -18,7 +18,7 @@ RUN apk -U upgrade \
     imagemagick=7.1.1.41-r0 \
     optipng=0.7.8-r0 \
     py3-pip=24.3.1-r0 \
-    python3=3.12.9-r0 \
+    python3=3.12.10-r0 \
     && if apk -u list | grep -q -e . ; then \
       apk -u list ; \
       exit 1 ; \
