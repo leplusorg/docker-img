@@ -17,13 +17,13 @@ Let's say that you have an image `foo.jpg` in your current working directory tha
 **Mac/Linux**
 
 ```bash
-cat foo.jpg | docker run --rm -i --net=none leplusorg/img identify -
+cat foo.jpg | docker run --rm -i --net=none leplusorg/img magick identify -
 ```
 
 **Windows**
 
 ```batch
-type foo.jpg | docker run --rm -i --net=none leplusorg/img identify -
+type foo.jpg | docker run --rm -i --net=none leplusorg/img magick identify -
 ```
 
 ## Example using the filesystem
@@ -33,7 +33,7 @@ Same thing, assuming that you have an image `foo.jpg` in your current working di
 **Mac/Linux**
 
 ```bash
-docker run --rm -t --user="$(id -u):$(id -g)" --net=none -v "$(pwd):/tmp" leplusorg/img identify /tmp/foo.jpg
+docker run --rm -t --user="$(id -u):$(id -g)" --net=none -v "$(pwd):/tmp" leplusorg/img magick identify /tmp/foo.jpg
 ```
 
 **Windows**
@@ -41,13 +41,13 @@ docker run --rm -t --user="$(id -u):$(id -g)" --net=none -v "$(pwd):/tmp" leplus
 In `cmd`:
 
 ```batch
-docker run --rm -t --net=none -v "%cd%:/tmp" leplusorg/img identify /tmp/foo.jpg
+docker run --rm -t --net=none -v "%cd%:/tmp" leplusorg/img magick identify /tmp/foo.jpg
 ```
 
 In PowerShell:
 
 ```pwsh
-docker run --rm -t --net=none -v "${PWD}:/tmp" leplusorg/img identify /tmp/foo.jpg
+docker run --rm -t --net=none -v "${PWD}:/tmp" leplusorg/img magick identify /tmp/foo.jpg
 ```
 
 ## Help
@@ -55,7 +55,7 @@ docker run --rm -t --net=none -v "${PWD}:/tmp" leplusorg/img identify /tmp/foo.j
 To know more command-line options of one of the imagemagick command:
 
 ```bash
-docker run --rm --net=none leplusorg/img identify -help
+docker run --rm --net=none leplusorg/img magick -help
 ```
 
 ## Software Bill of Materials (SBOM)
