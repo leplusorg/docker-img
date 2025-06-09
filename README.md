@@ -1,6 +1,6 @@
 # Images
 
-Docker container to manipulate images (imagemagick, exiftool, optipng...).
+Docker container with utilities to process images (imagemagick, exiftool, optipng...).
 
 [![Dockerfile](https://img.shields.io/badge/GitHub-Dockerfile-blue)](img/Dockerfile)
 [![Docker Build](https://github.com/leplusorg/docker-img/workflows/Docker/badge.svg)](https://github.com/leplusorg/docker-img/actions?query=workflow:"Docker")
