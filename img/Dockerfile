@@ -14,7 +14,8 @@ SHELL ["/bin/ash", "-euo", "pipefail", "-c"]
 # hadolint ignore=DL3019
 RUN apk -U upgrade \
     && apk add \
-    curl=8.14.1-r0 \
+    coreutils=9.7-r1 \
+    curl=8.14.1-r1 \
     exiftool=13.30-r0 \
     git=2.49.0-r0 \
     imagemagick=7.1.1.44-r0 \
