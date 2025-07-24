@@ -18,7 +18,7 @@ RUN apk -U upgrade \
     curl=8.14.1-r1 \
     exiftool=13.30-r0 \
     git=2.49.1-r0 \
-    imagemagick=7.1.1.44-r0 \
+    imagemagick=7.1.2.0-r0 \
     optipng=0.7.8-r0 \
     py3-pip=25.1.1-r0 \
     python3=3.12.11-r0 \
