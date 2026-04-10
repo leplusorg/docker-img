@@ -15,7 +15,7 @@ RUN apk upgrade --no-cache \
     && apk add --no-cache \
     coreutils=9.8-r1 \
     curl=8.17.0-r1 \
-    exiftool=13.36-r0 \
+    exiftool=13.50-r0 \
     git=2.52.0-r0 \
     imagemagick=7.1.2.17-r0 \
     optipng=0.7.8-r0 \
