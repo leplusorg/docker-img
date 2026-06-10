@@ -13,14 +13,14 @@ SHELL ["/bin/ash", "-euo", "pipefail", "-c"]
 
 RUN apk upgrade --no-cache \
     && apk add --no-cache \
-    coreutils=9.8-r1 \
-    curl=8.19.0-r0 \
+    coreutils=9.11-r0 \
+    curl=8.20.0-r1 \
     exiftool=13.55-r0 \
-    git=2.52.0-r0 \
+    git=2.54.0-r0 \
     imagemagick=7.1.2.24-r0 \
-    optipng=0.7.8-r0 \
-    py3-pip=25.1.1-r1 \
-    python3=3.12.13-r0 \
+    optipng=7.9.1-r1 \
+    py3-pip=26.1.2-r0 \
+    python3=3.14.5-r0 \
     && apk cache --no-cache clean \
     && rm -rf /var/cache/apk/*
 
