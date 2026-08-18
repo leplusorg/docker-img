@@ -20,7 +20,7 @@ RUN apk upgrade --no-cache \
     imagemagick=7.1.2.27-r0 \
     optipng=7.9.1-r1 \
     py3-pip=26.1.2-r0 \
-    python3=3.14.7-r0 \
+    python3=3.14.7-r1 \
     && apk cache --no-cache clean \
     && rm -rf /var/cache/apk/*
 
