@@ -14,7 +14,7 @@ SHELL ["/bin/ash", "-euo", "pipefail", "-c"]
 RUN apk upgrade --no-cache \
     && apk add --no-cache \
     coreutils=9.11-r0 \
-    curl=8.22.0-r0 \
+    curl=8.23.0-r0 \
     exiftool=13.55-r0 \
     git=2.54.0-r0 \
     imagemagick=7.1.2.34-r0 \
