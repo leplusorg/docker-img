@@ -16,7 +16,7 @@ RUN apk upgrade --no-cache \
     coreutils=9.11-r0 \
     curl=8.23.0-r0 \
     exiftool=13.55-r0 \
-    git=2.54.0-r0 \
+    git=2.54.1-r0 \
     imagemagick=7.1.2.35-r0 \
     optipng=7.9.1-r1 \
     py3-pip=26.1.2-r0 \
